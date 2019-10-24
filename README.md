@@ -44,24 +44,24 @@ Authorization header param to get access to protected content
     - [x] POST /users/login - login to user
     - [x] GET /users/data - get the data of the user in jwt
     - [x] PUT /users/data - update the data of the user in jwt
-  - [x] create controller mockup
-  - [x] install jsonwebtoken
-  - [x] create function that receives user and returns jwt in controller
-  - [x] create signup function
-  - [x] install passport and passport-jwt
-  - [x] create passport.js
-  - [x] in passport.js create jwt strategy
-  - [x] require passport.js in router
-  - [x] use jwt strategy in router
-  - [x] create getData function
-  - [x] create updateData function
-  - [x] install passport-local
-  - [x] in passport.js create local strategy
-  - [x] use local strategy on router
-  - [x] install bcryptjs
-  - [x] modify code for bcrypt
-    - [x] user model
-      - [x] encrypt
-      - [x] decrypt
-    - [x] passport.js
-  - [x] create login function
+- [x] create controller mockup
+- [x] install jsonwebtoken
+- [x] create function that receives user and returns jwt in controller
+- [x] create signup function
+- [x] install passport and passport-jwt
+- [x] create passport.js
+- [x] in passport.js create jwt strategy
+- [x] require passport.js in router
+- [x] use jwt strategy in router
+- [x] create getData function
+- [x] create updateData function
+- [x] install passport-local
+- [x] in passport.js create local strategy
+- [x] use local strategy on router
+- [x] install bcryptjs
+- [x] modify code for bcrypt
+  - [x] user model
+    - [x] encrypt
+    - [x] decrypt
+  - [x] passport.js
+- [x] create login function
