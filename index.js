@@ -11,8 +11,7 @@ const app = express();
 const mongoUri = process.env.MONGO_URI;
 mongoose.connect(mongoUri, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
+  useUnifiedTopology: true
 });
 const db = mongoose.connection;
 db.on('connected', () => {
@@ -27,7 +26,7 @@ app.use(cors());
 app.use('/users', require('./routes/userRouter'));
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3333;
 app.listen(port, () => {
   console.log(`server started listening on port ${port}`)
 });

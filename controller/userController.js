@@ -51,12 +51,9 @@ module.exports = {
   updateData: async (req, res) => {
     const newData = req.body.data;
     try {
-      const user = await User.findById(req.user.id);
-      user.data = newData;
-      await user.save();
+      await User.updateOne({ _id: req.user.id }, { data: newData });
       res.status(200).send({ data: newData });
     } catch (err) {
-      console.log(err);
       res.status(500).send({ message: 'error updating data' });
     }
   }
