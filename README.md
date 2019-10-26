@@ -11,7 +11,8 @@ Authorization header param to get access to protected content
 
 ## endpoints
 
-- POST users/signup: in this endpoint you will pass a object like the following
+- POST users/signup:
+  in this endpoint you will pass a object like the following
   in the body, the backend will create and store a new user and will terur a jwt
   token for the newly created user as response:
 
@@ -33,7 +34,8 @@ Authorization header param to get access to protected content
   }
   ```
 
-- POST users/login: in this endpoint you will pass a object like the following
+- POST users/login:
+  in this endpoint you will pass a object like the following
   in the body, the backend will find a user with the given username and test it 
   the password matched, if so it will send a response with the JWT if note will
   respond with 403(unauthorized):
@@ -55,7 +57,8 @@ Authorization header param to get access to protected content
   }
   ```
 
-- GET users/data: in this endpoint you will pass a JWT token in the 
+- GET users/data: 
+  in this endpoint you will pass a JWT token in the 
   authorization header of the request and will get back the data of 
   the user that JWT was givn to:
 
@@ -67,7 +70,8 @@ Authorization header param to get access to protected content
   }
   ```
 
-- PUT users/data: in this endpoint you will pass a body with a new 
+- PUT users/data: 
+  in this endpoint you will pass a body with a new 
   data and a JWT token in the authorization header of the request 
   and that data wil become the new data stored in the user of the JWT:
 
